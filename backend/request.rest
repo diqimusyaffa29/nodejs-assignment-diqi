@@ -1,0 +1,32 @@
+# this is for get all users data
+GET http://localhost:5000/users
+
+###
+# This is for get certain users data
+GET http://localhost:5000/users/1
+
+###
+# this is for creating new users
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "doe@gmail.com",
+    "sex": "Male"
+}
+
+###
+# this is for updating/change users data
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "Diqi",
+    "email": "diqi@gmail.com",
+    "sex": "Male"
+}
+
+###
+# this is for delete certain users
+DELETE http://localhost:5000/users/2
