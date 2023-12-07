@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
-import {useNavigate} from "react-router-dom";
+import {useNavigate, Link} from "react-router-dom";
 
 const AddUser = () => {
     const [name, setName] = useState("");
@@ -56,6 +56,11 @@ const AddUser = () => {
                         </button>
                     </div>
                 </form>
+                <div className="field">
+                    <Link to={`/`} className="button is-danger">
+                        Back
+                    </Link>
+                </div>
             </div>
         </div>
     );
